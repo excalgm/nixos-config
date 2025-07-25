@@ -9,7 +9,6 @@
     amnezia-vpn
 
     # Console utilities
-		fastfetch
     wget
     lutgen
 	];
