@@ -54,6 +54,7 @@ My awesome NixOS configuration inspired by [Ampersand's flake](https://github.co
 7. **Rebuild system**:
   ```bash
   cd nixos-config
+  git add .
   nixos-rebuild switch --flake ./#<hostname>
   home-manager switch --flake ./#<hostname>
   ```
