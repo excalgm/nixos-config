@@ -13,6 +13,7 @@
         usernamehw.errorlens
         vscode-icons-team.vscode-icons
         vscodevim.vim
+        wakatime.vscode-wakatime
         ];
       userSettings = {
         "editor.tabSize" = 2;
