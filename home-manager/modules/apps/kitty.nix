@@ -3,7 +3,7 @@
     enable = true;
     enableGitIntegration = true;
     settings = {
-      hide_window_decorations = "yes";
+      hide_window_decorations = "no";
     };
   };
 }
