@@ -21,6 +21,7 @@
         "extensions.autoCheckUpdates" = false;
         "extensions.autoUpdate" = false;
         "vsicons.dontShowNewVersionMessage" = true;
+        "git.autofetch" = true;
       };
     };
   };
