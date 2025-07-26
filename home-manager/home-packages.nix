@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
 		# Desktop apps
     amnezia-vpn
+    appflowy
     filen-desktop
     keepassxc
     localsend
