@@ -15,4 +15,5 @@
 
   services.power-profiles-daemon.enable = true;
   services.fwupd.enable = true;
+  services.throttled.enable = true;
 }
