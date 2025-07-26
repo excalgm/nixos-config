@@ -7,6 +7,7 @@
 		./network.nix
 		./nh.nix
 		./nix.nix
+		./security.nix
 		./ssh-agent.nix
 		./timezone.nix
 		./users.nix
