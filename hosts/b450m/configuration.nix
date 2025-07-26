@@ -12,4 +12,6 @@
   networking.hostName = hostname;
 
   system.stateVersion = stateVersion;
+
+  services.fstrim.enable = true;
 }
