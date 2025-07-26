@@ -65,7 +65,8 @@ Then reboot and you are good to go!
 
 ## 👍 Tips and tricks
 1. After installing this configuration you can easily rebuild system and Home Manager with aliases declared in `home-manager/modules/shell.nix`.
-2. You can change color palette in `home-manager/modules/stylix.nix`. After the change you need to re-login or the GNOME theme will not apply.
+2. You can change color palette in `home-manager/modules/stylix.nix`. I also included the link to available palettes and guide how to apply them.
+3. After changing colors or installing apps via `home-packages` you need to re-login or apps will not show and colored GNOME theme will not apply.
 
 ## 🤝 Credits
 - **BIG THANKS** ❤️ to [**Ampersand**](https://github.com/Andrey0189). Because I am new in NixOS, I mostly inspired by his configuration and video-guide ([Russian](https://youtu.be/watch?v=HOq7XTygAAU) and [English](https://youtu.be/watch?v=nLwbNhSxLd4)).
