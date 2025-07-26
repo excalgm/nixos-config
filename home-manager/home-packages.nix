@@ -2,11 +2,12 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
 		# Desktop apps
+    amnezia-vpn
     filen-desktop
     keepassxc
     localsend
     telegram-desktop
-    amnezia-vpn
+    yandex-music
 
     # Console utilities
     wget
