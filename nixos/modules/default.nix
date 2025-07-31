@@ -1,6 +1,7 @@
 {
 	imports = [
-		./appimage.nix
+    ./amnezia-vpn.nix
+    ./appimage.nix
 		./audio.nix
 		./boot.nix
 		./gnome.nix
