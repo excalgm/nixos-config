@@ -6,5 +6,6 @@
     ./vesktop.nix
     ./vim.nix
     ./vscode.nix
+    ./web.nix
   ];
 }
