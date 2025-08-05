@@ -1,6 +1,6 @@
 { pkgs, ... }: {
-	environment.systemPackages = with pkgs; [
-		vim
-		gnome-software
-	];
+  environment.systemPackages = with pkgs; [
+    vim
+    gnome-software
+  ];
 }

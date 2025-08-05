@@ -19,27 +19,27 @@
       v = "vim";
 
       ".." = "cd ..";
-	  };
+    };
 
-		plugins = [
-			{                                                                                   
-				name = "powerlevel10k";                                                           
-				src = pkgs.zsh-powerlevel10k;                                                     
-				file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";                         
-			}
-			{
-				name = "fast-syntax-highlighting";
-				src = pkgs.zsh-fast-syntax-highlighting;
-				file = "share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh";
+    plugins = [
+      {                                                                                   
+        name = "powerlevel10k";                                                           
+        src = pkgs.zsh-powerlevel10k;                                                     
+        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";                         
+      }
+      {
+        name = "fast-syntax-highlighting";
+        src = pkgs.zsh-fast-syntax-highlighting;
+        file = "share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh";
       }
       {
         name = "zsh-autosuggestions";
         src = pkgs.zsh-autosuggestions;
         file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
       }
-		];
-	};
-	
-	programs.kitty.shellIntegration.enableZshIntegration = true;
-	home.shell.enableZshIntegration = true;
+    ];
+  };
+  
+  programs.kitty.shellIntegration.enableZshIntegration = true;
+  home.shell.enableZshIntegration = true;
 }

@@ -1,7 +1,7 @@
 {
-	programs.vim = {
-		enable = true;
-		settings.tabstop = 2;
-		settings.shiftwidth = 2;
-	};
+  programs.vim = {
+    enable = true;
+    settings.tabstop = 2;
+    settings.shiftwidth = 2;
+  };
 }

@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
-		# Desktop apps
+    # Desktop apps
     appflowy
     filen-desktop
     keepassxc
@@ -12,5 +12,5 @@
     # Console utilities
     wget
     lutgen
-	];
+  ];
 }

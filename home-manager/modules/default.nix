@@ -1,9 +1,9 @@
 {
-	imports = [
-		./apps
-		./git.nix
-		./gnome.nix
-		./shell.nix
-		./stylix.nix
-	];
+  imports = [
+    ./apps
+    ./git.nix
+    ./gnome.nix
+    ./shell.nix
+    ./stylix.nix
+  ];
 }

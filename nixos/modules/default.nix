@@ -1,5 +1,5 @@
 {
-	imports = [
+  imports = [
     ./amnezia-vpn.nix
     ./appimage.nix
     ./audio.nix
@@ -13,5 +13,5 @@
     ./timezone.nix
     ./users.nix
     ./virtualisation.nix
-	];
+  ];
 }
