@@ -16,6 +16,7 @@
       upd = "nh os switch --update";
       hms = "nh home switch";
 
+      ff = "fastfetch";
       v = "vim";
 
       ".." = "cd ..";
