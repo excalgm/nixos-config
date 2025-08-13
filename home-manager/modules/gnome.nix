@@ -6,6 +6,7 @@
       { package = ge.appindicator; }
       { package = ge.caffeine; }
       { package = ge.dash-to-dock; }
+      { package = ge.tailscale-qs; }
     ];
   };
   dconf = {

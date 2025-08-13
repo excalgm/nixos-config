@@ -10,6 +10,7 @@
     ./nix.nix
     ./security.nix
     ./ssh-agent.nix
+    ./tailscale.nix
     ./timezone.nix
     ./users.nix
     ./virtualisation.nix
