@@ -14,7 +14,7 @@
     # https://github.com/ozwaldorf/lutgen-rs
     image = ../../assets/wallpaper.jpg;
     # https://nix-community.github.io/stylix/configuration.html#handmade-schemes
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-soft.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/windows-10.yaml";
 
     fonts = {
       monospace = {
