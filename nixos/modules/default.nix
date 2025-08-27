@@ -4,6 +4,7 @@
     ./appimage.nix
     ./audio.nix
     ./boot.nix
+    ./gamemode.nix
     ./gnome.nix
     ./network.nix
     ./nh.nix
