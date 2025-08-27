@@ -61,7 +61,7 @@ My awesome NixOS configuration inspired by [Ampersand's flake](https://github.co
   > Replace `<hostname>` with hostname from step 3.  
 
 Then reboot and you are good to go!
-> Don't forget to adapt some modules like `git.nix` or `nh.nix`!
+> Don't forget to edit some modules (change usernames etc.) like `git.nix`, `iamb.nix` or `nh.nix`!
 
 ## 👍 Tips and tricks
 1. After installing this configuration you can easily rebuild system and Home Manager with aliases declared in `home-manager/modules/shell.nix`.
