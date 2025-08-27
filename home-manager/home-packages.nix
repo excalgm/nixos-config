@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     # Desktop apps
     appflowy
-    figma-agent
     filen-desktop
     keepassxc
     localsend
