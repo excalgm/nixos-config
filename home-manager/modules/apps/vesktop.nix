@@ -6,8 +6,8 @@
       arRPC = false;
       checkUpdates = false;
       customTitleBar = true;
-      minimizeToTray = false;
-      tray = false;
+      minimizeToTray = true;
+      tray = true;
       staticTitle = true;
       hardwareAcceleration = true;
       discordBranch = "stable";
