@@ -22,6 +22,10 @@
       ".." = "cd ..";
     };
 
+    sessionVariables = {
+      EDITOR = "vim";
+    };
+
     plugins = [
       {                                                                                   
         name = "powerlevel10k";                                                           
