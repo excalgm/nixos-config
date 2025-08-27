@@ -9,6 +9,7 @@
     ./network.nix
     ./nh.nix
     ./nix.nix
+    ./powermgmt.nix
     ./security.nix
     ./ssh-agent.nix
     ./tailscale.nix
