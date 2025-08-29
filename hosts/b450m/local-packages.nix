@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    tenacity
     ntfs3g
     dbeaver-bin
     (prismlauncher.override {
