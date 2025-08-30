@@ -5,6 +5,7 @@
       { package = ge.accent-directories; }
       { package = ge.appindicator; }
       { package = ge.caffeine; }
+      { package = ge.color-picker; }
       { package = ge.dash-to-dock; }
       { package = ge.tailscale-qs; }
     ];
