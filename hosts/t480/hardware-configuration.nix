@@ -14,14 +14,14 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/9dd89829-d959-44a4-b878-8150ae5903ca";
+    { device = "/dev/disk/by-uuid/8367e92a-8505-4152-8c74-9a8ca8ce21e8";
       fsType = "btrfs";
     };
 
-  boot.initrd.luks.devices."nixos".device = "/dev/disk/by-uuid/982eb53d-b14b-4531-ac8a-6a0f0533aab2";
+  boot.initrd.luks.devices."nixos".device = "/dev/disk/by-uuid/165497e0-99ae-4a65-b51a-3c0d693966b0";
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/72E0-E311";
+    { device = "/dev/disk/by-uuid/48BA-5817";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
@@ -32,9 +32,9 @@
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = false;
-  networking.interfaces.enp0s31f6.useDHCP = lib.mkDefault true;
-  networking.interfaces.wlp3s0.useDHCP = lib.mkDefault true;
+  networking.useDHCP = lib.mkDefault true;
+  # networking.interfaces.enp0s31f6.useDHCP = lib.mkDefault true;
+  # networking.interfaces.wlp3s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
