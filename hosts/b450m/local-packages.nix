@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
     tenacity
     ntfs3g
+    libresprite
     dbeaver-bin
     (prismlauncher.override {
       jdks = [
