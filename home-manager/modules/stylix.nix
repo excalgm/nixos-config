@@ -39,7 +39,7 @@
 
     targets = {
       firefox = {
-        firefoxGnomeTheme.enable = true;
+        firefoxGnomeTheme.enable = false;
         profileNames = [ "default" ];
       };
       vscode.enable = true;
