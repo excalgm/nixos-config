@@ -5,7 +5,7 @@
     ./audio.nix
     ./boot.nix
     ./gamemode.nix
-    ./gnome.nix
+    ./kde.nix
     ./network.nix
     ./nh.nix
     ./nix.nix
