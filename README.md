@@ -8,7 +8,7 @@ My awesome NixOS configuration inspired by [Ampersand's flake](https://github.co
 - 💻 **Multi-Host**: ease of configuration for different PCs/hosts.
 - 🎨 **Themes**: a lot of [color palettes](https://github.com/tinted-theming/schemes) that you can use for supported apps with [Stylix](https://nix-community.github.io/stylix/configuration.html#handmade-schemes).
 - 🏠 **Home Manager**: lots of configured stuff which is same on different hosts.
-- 👣 **Desktop Environment**: GNOME with essential extensions. (Dash to Dock, Accent Directories, AppIndicator etc.)
+- 👣 **Desktop Environment**: KDE Plasma. 
 - ✍️ **Code editor**: Themed VSCode with Vim emulation.
 - 🛠️ **Shell**: zsh with powerlevel10k and bare minimum of plugins.
 
@@ -65,8 +65,8 @@ Then reboot and you are good to go!
 
 ## 👍 Tips and tricks
 1. After installing this configuration you can easily rebuild system and Home Manager with aliases declared in `home-manager/modules/shell.nix`.
-2. You can change color palette in `home-manager/modules/stylix.nix`. I also included the link to available palettes and guide how to apply them.
-3. After changing colors or installing apps via `home-packages` you need to re-login or apps will not show and colored GNOME theme will not apply.
+2. You can change color palette in `home-manager/modules/stylix.nix`. I also have included the link to available palettes and guide how to apply them.
+3. After installing apps via `home-packages` you need to re-login or new apps will not show.
 
 ## 🤝 Credits
 - **BIG THANKS** ❤️ to [**Ampersand**](https://github.com/Andrey0189). Because I am new in NixOS, I mostly inspired by his configuration and video-guide ([Russian](https://youtu.be/watch?v=HOq7XTygAAU) and [English](https://youtu.be/watch?v=nLwbNhSxLd4)).
