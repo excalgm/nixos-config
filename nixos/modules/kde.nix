@@ -5,6 +5,11 @@
     displayManager.sddm.wayland.enable = true;
   };
 
+  environment.plasma6.excludePackages = with pkgs; [
+    kdePackages.elisa
+    kdePackages.konsole
+  ];
+
   environment.systemPackages = with pkgs; [
     kdePackages.discover
     kdePackages.kcalc
@@ -12,9 +17,10 @@
     kdePackages.kclock
     kdePackages.kcolorchooser
     kdePackages.kolourpaint
-    kdePackages.ksystemlog
+    kdePackages.ksshaskpass
     kdePackages.sddm-kcm
     kdePackages.partitionmanager
+
     wayland-utils
     wl-clipboard
   ];
