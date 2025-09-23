@@ -8,7 +8,6 @@
     localsend
     telegram-desktop
     vlc
-    yandex-music
 
     # Console utilities
     wget
