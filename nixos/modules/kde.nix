@@ -17,7 +17,6 @@
     kdePackages.kclock
     kdePackages.kcolorchooser
     kdePackages.kolourpaint
-    kdePackages.ksshaskpass
     kdePackages.sddm-kcm
     kdePackages.partitionmanager
 

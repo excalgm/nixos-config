@@ -1,8 +1,10 @@
 {
-  security.polkit.enable = true;
-  security.sudo.enable = false;
-  security.sudo-rs.enable = true;
-  security.pam.services.kwallet.kwallet = {
-    enable = true;
+  security = {
+    polkit.enable = true;
+    sudo.enable = false;
+    sudo-rs.enable = true;
+    pam = {
+      sshAgentAuth.enable = true;
+    };
   };
 }

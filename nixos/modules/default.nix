@@ -11,7 +11,7 @@
     ./nix.nix
     ./powermgmt.nix
     ./security.nix
-    ./ssh-agent.nix
+    ./ssh.nix
     ./tailscale.nix
     ./timezone.nix
     ./users.nix
