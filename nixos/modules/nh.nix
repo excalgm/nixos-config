@@ -1,6 +1,6 @@
 { user, ... }: {
   programs.nh = {
     enable = true;
-    flake = "/home/${user}/nix";
+    flake = "/home/${user}/nixos-config";
   };
 }
