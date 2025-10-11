@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   programs.gpg = {
     enable = true;
     settings = {
@@ -7,5 +7,9 @@
   };
   services.gpg-agent = {
     enable = true;
+    pinentry = {
+      package = pkgs.pinentry-gnome3;
+      program = "pinentry-gnome3";
+    };
   };
 }

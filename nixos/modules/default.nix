@@ -4,13 +4,13 @@
     ./appimage.nix
     ./audio.nix
     ./boot.nix
+    ./gnupg.nix
     ./network.nix
     ./nh.nix
     ./niri.nix
     ./nix.nix
     ./powermgmt.nix
     ./security.nix
-    ./ssh.nix
     ./tailscale.nix
     ./timezone.nix
     ./udisks.nix
