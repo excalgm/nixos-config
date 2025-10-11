@@ -6,9 +6,7 @@
       user.email = "excalgames@duck.com";
       init.defaultBranch = "main";
       commit.gpgsign = true;
-      gpg.format = "ssh";
-      gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
-      user.signingkey = "~/.ssh/id_ed25519.pub";
+      user.signingkey = "52ED1E3B2D413D7A814B195C2593CAC242A94CE4";
     };
   };
 }
