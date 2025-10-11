@@ -3,8 +3,10 @@
     ./btop.nix
     ./fastfetch.nix
     ./firefox.nix
+    ./fuzzel.nix
     ./iamb.nix
     ./kitty.nix
+    ./mako.nix
     ./obs.nix
     ./vesktop.nix
     ./vim.nix

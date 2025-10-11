@@ -13,9 +13,11 @@
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    niri.url = "github:sodiboo/niri-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, niri, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "q";
@@ -33,6 +35,7 @@
       };
 
       modules = [
+        { nixpkgs.overlays = [ niri.overlays.niri ]; }
         ./hosts/${hostname}/configuration.nix
       ];
     };
@@ -51,6 +54,8 @@
         };
 
         modules = [
+          niri.homeModules.niri
+          niri.homeModules.stylix
           ./home-manager/home.nix
         ];
       };

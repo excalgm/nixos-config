@@ -2,7 +2,6 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     # Desktop apps
-    appflowy
     filen-desktop
     keepassxc
     localsend
@@ -10,7 +9,13 @@
     vlc
 
     # Console utilities
-    wget
+    brightnessctl
+    libnotify
     lutgen
+    wget
+
+    # Other
+    bemoji
+    udiskie
   ];
 }

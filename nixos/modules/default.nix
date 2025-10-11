@@ -4,16 +4,16 @@
     ./appimage.nix
     ./audio.nix
     ./boot.nix
-    ./gamemode.nix
-    ./kde.nix
     ./network.nix
     ./nh.nix
+    ./niri.nix
     ./nix.nix
     ./powermgmt.nix
     ./security.nix
     ./ssh.nix
     ./tailscale.nix
     ./timezone.nix
+    ./udisks.nix
     ./users.nix
     ./virtualisation.nix
   ];
