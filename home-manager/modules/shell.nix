@@ -45,6 +45,7 @@
     ];
   };
   
-  programs.kitty.shellIntegration.enableZshIntegration = true;
   home.shell.enableZshIntegration = true;
+  programs.kitty.shellIntegration.enableZshIntegration = true;
+  services.gpg-agent.enableZshIntegration = true;
 }
