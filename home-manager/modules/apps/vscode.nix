@@ -23,6 +23,7 @@
         "extensions.autoUpdate" = false;
         "vsicons.dontShowNewVersionMessage" = true;
         "git.autofetch" = true;
+        "git.confirmSync" = false;
       };
     };
   };
