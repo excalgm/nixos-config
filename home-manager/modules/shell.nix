@@ -17,6 +17,7 @@
       hms = "nh home switch";
 
       ff = "fastfetch";
+      icat = "kitten icat";
       v = "vim";
 
       ".." = "cd ..";
