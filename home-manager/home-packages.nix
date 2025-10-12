@@ -7,15 +7,20 @@
     localsend
     telegram-desktop
     vlc
+    yandex-music
 
     # Console utilities
-    brightnessctl
     cava
     cbonsai
     cmatrix
-    libnotify
     lutgen
     wget
+
+    # Console utilities -> Dependencies for other apps
+    brightnessctl
+    libnotify
+    wl-clipboard
+    wtype
 
     # Other
     bemoji
