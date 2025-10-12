@@ -10,6 +10,9 @@
 
     # Console utilities
     brightnessctl
+    cava
+    cbonsai
+    cmatrix
     libnotify
     lutgen
     wget
