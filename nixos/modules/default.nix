@@ -4,6 +4,7 @@
     ./appimage.nix
     ./audio.nix
     ./boot.nix
+    ./bluetooth.nix
     ./gnupg.nix
     ./network.nix
     ./nh.nix
