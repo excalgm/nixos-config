@@ -47,7 +47,8 @@ in {
   programs.niri.settings.binds = with config.lib.niri.actions; {
     "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-    "Mod+Period".action = spawn "bemoji" "--noline";
+    "Mod+Period".action = spawn "bemoji" "-tn";
+    "Mod+Shift+Period".action = spawn "bemoji" "-cn";
     "Mod+Return".action = spawn "kitty";
     "Mod+D".action = spawn "fuzzel";
     "Mod+F1".action = spawn "${powermenu}/bin/powermenu";
