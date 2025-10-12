@@ -53,9 +53,7 @@
         firefoxGnomeTheme.enable = false;
         profileNames = [ "default" ];
       };
-      fuzzel.enable = false;
       hyprlock.enable = false;
-      mako.enable = false;
       vscode.enable = true;
       waybar.enable = false;
     };

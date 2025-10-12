@@ -7,12 +7,12 @@
       default-timeout = 2500;
       max-icon-size = 48;
 
-      background-color = "#282828";
-      text-color = "#ebdbb2";
-      border-color = "#665c54";
-      progress-color = "over #504945";
+#      background-color = "#282828";
+#      text-color = "#ebdbb2";
+#      border-color = "#665c54";
+#      progress-color = "over #504945";
 
-      "urgency=high".border-color = "#cc241d";
+#      "urgency=high".border-color = "#cc241d";
       "mode=do-not-disturb".invisible = true;
       "app-name=wp-vol" = {
         layer = "overlay";
