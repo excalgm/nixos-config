@@ -11,6 +11,7 @@
         { argv = ["udiskie" "--tray"]; }
         { argv = ["mako"]; }
         { argv = ["waybar"]; }
+        { argv = ["systemctl" "--user" "restart" "wpaperd.service"]; }
         # { argv = ["hypridle"]; }
       ];
 
