@@ -19,7 +19,7 @@
         { type = "display"; key = "󰹑"; }
         { type = "uptime"; key = ""; }
         "break"
-        { type = "de"; key = "󰧨"; }
+        { type = "wm"; key = "󰧨"; }
         { type = "shell"; key = ""; }
         { type = "terminal"; key = ""; }
         { type = "packages"; key = ""; }
