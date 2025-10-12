@@ -5,6 +5,7 @@
     sudo-rs.enable = true;
     pam = {
       sshAgentAuth.enable = true;
+      services.hyprlock = {};
     };
   };
 }
