@@ -19,6 +19,7 @@
       ff = "fastfetch";
       icat = "kitten icat";
       v = "vim";
+      dnd = "makoctl mode -t do-not-disturb";
 
       ".." = "cd ..";
     };
@@ -48,5 +49,6 @@
   
   home.shell.enableZshIntegration = true;
   programs.kitty.shellIntegration.enableZshIntegration = true;
+  programs.lsd.enableZshIntegration = true;
   services.gpg-agent.enableZshIntegration = true;
 }

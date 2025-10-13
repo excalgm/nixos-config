@@ -6,6 +6,7 @@
     ./fuzzel.nix
     ./iamb.nix
     ./kitty.nix
+    ./lsd.nix
     ./mako.nix
     ./obs.nix
     ./vesktop.nix
