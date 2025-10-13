@@ -42,10 +42,11 @@
           format-muted = "󰖁 <s>{volume}%</s>";
         };
         "network" = {
-          format-wifi = "󰖩 {essid} ({signalStrength}%)";
+          format-wifi = "{icon} {essid}";
           format-ethernet = "󰈀 Ethernet";
           format-linked = "󰲝 Connected w/o IP";
           format-disconnected = "󰲜 Disconnected";
+          format-icons = [ "󰤯" "󰤟" "󰤢" "󰤥" "󰤨" ];
           tooltip-format = "{ifname} via {gwaddr}\nIP: {ipaddr}/{cidr}";
         };
         "niri/language" = {
