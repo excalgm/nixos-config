@@ -50,7 +50,6 @@
 
     targets = {
       firefox = {
-        firefoxGnomeTheme.enable = false;
         profileNames = [ "default" ];
       };
       hyprlock.enable = false;
