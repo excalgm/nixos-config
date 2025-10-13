@@ -15,9 +15,14 @@
     };
 
     niri.url = "github:sodiboo/niri-flake";
+
+    nur = {
+      url = "github:nix-community/nur";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, niri, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, niri, nur, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "q";
@@ -54,6 +59,7 @@
         };
 
         modules = [
+          nur.modules.homeManager.default
           niri.homeModules.niri
           niri.homeModules.stylix
           ./home-manager/home.nix
