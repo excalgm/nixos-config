@@ -1,43 +1,45 @@
 { pkgs, ... }: {
-  programs.btop.enable = true;
-  programs.lsd.enable = true;
-  programs.obs-studio.enable = true;
+  programs = {
+    btop.enable = true;
+    lsd.enable = true;
+    obs-studio.enable = true;
 
-  programs.vim = {
-    enable = true;
-    packageConfigurable = pkgs.vim;
-    settings.expandtab = true;
-    settings.shiftwidth = 2;
-    settings.tabstop = 8;
-  };
+    vim = {
+      enable = true;
+      packageConfigurable = pkgs.vim;
+      settings.expandtab = true;
+      settings.shiftwidth = 2;
+      settings.tabstop = 8;
+    };
 
-  programs.fuzzel = {
-    enable = true;
-    settings = {
-      main = {
-        icon-theme = "MoreWaita";
-        placeholder = "Enter something...";
-        prompt = "🔍 ";
-        terminal = "kitty --hold";
-        lines = 15;
-        line-height = 20;
-        inner-pad = 5;
-        width = 50;
-        horizontal-pad = 20;
+    fuzzel = {
+      enable = true;
+      settings = {
+        main = {
+          icon-theme = "MoreWaita";
+          placeholder = "Enter something...";
+          prompt = "🔍 ";
+          terminal = "kitty --hold";
+          lines = 15;
+          line-height = 20;
+          inner-pad = 5;
+          width = 50;
+          horizontal-pad = 20;
+        };
       };
     };
-  };
 
-  programs.iamb = {
-    enable = true;
-    settings = {
-      profiles.user.user_id = "@stanislav:excal.cc";
-      notifications.enabled = true;
-      image_preview = {
-        protocol.type = "kitty"; 
-        protocol.size = {
-          height = 10;
-          width = 66;
+    iamb = {
+      enable = true;
+      settings = {
+        profiles.user.user_id = "@stanislav:excal.cc";
+        notifications.enabled = true;
+        image_preview = {
+          protocol.type = "kitty"; 
+          protocol.size = {
+            height = 10;
+            width = 66;
+          };
         };
       };
     };
