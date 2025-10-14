@@ -1,13 +1,16 @@
 { lib, pkgs, ... }: {
+  imports = [ ./kitty.nix ];
+
   programs.zsh = {
     enable = true;
     initContent = let
+      p10kfile = ./.p10k.zsh;
       zshBeforeCompInit = lib.mkOrder 550 ''
         setopt notify interactive_comments
         unsetopt autocd beep extendedglob nomatch
         set -o vi
       '';
-      zshLastToRun = lib.mkOrder 1500 "source ~/.p10k.zsh";
+      zshLastToRun = lib.mkOrder 1500 "source ${p10kfile}";
     in
       lib.mkMerge [ zshBeforeCompInit zshLastToRun ];
 
