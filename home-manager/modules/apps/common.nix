@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   programs = {
     btop.enable = true;
+    bat.enable = true;
     lsd.enable = true;
     obs-studio.enable = true;
 

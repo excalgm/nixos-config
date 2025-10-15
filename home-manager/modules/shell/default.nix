@@ -15,14 +15,16 @@
       lib.mkMerge [ zshBeforeCompInit zshLastToRun ];
 
     shellAliases = {
+      hms = "nh home switch";
       sw = "nh os switch";
       upd = "nh os switch --update";
-      hms = "nh home switch";
 
+      cat = "bat";
+      dnd = "makoctl mode -t do-not-disturb";
       ff = "fastfetch";
       icat = "kitten icat";
+      pcat = "bat -p";
       v = "vim";
-      dnd = "makoctl mode -t do-not-disturb";
 
       ".." = "cd ..";
     };
