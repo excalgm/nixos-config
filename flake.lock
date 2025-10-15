@@ -77,11 +77,11 @@
         "nvf": "nvf"
       },
       "locked": {
-        "lastModified": 1760539463,
-        "narHash": "sha256-eEZ6Ol7zZtgOi30zxHkZTVLaStQ/f40DCOHKdSBEtdE=",
+        "lastModified": 1760562319,
+        "narHash": "sha256-W7TSPI/idmezvpZ/Zamh26jdctA5UL0UrMh5DrMtjL8=",
         "ref": "main",
-        "rev": "4d1fac4b457e690c87b3b0ce9b5bfbd4d532a9aa",
-        "revCount": 1,
+        "rev": "3f9958ae878be67b6552d666d52014cda6855fa2",
+        "revCount": 6,
         "type": "git",
         "url": "https://codeberg.org/ae7er/envf.git"
       },
@@ -416,11 +416,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1760536369,
-        "narHash": "sha256-q8ddDB2hDpgzFFzQpmtw7bdGebdafieOsYPv1rgjjbo=",
+        "lastModified": 1760561137,
+        "narHash": "sha256-G2x6BFCv9CD7V8oiANSSddYoqJZ2NXyFvuCYnk9WI44=",
         "owner": "nix-community",
         "repo": "nur",
-        "rev": "0ee2fc8248ee6b312d0343b06aab481d01148785",
+        "rev": "cd6b2f26b608c71b7ad3c4809a3ea4f72d32f985",
         "type": "github"
       },
       "original": {
