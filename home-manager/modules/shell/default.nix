@@ -24,6 +24,7 @@
       ff = "fastfetch";
       icat = "kitten icat";
       pcat = "bat -p";
+      tree = "lsd --tree --icons never";
       v = "vim";
 
       ".." = "cd ..";
