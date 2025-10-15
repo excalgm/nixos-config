@@ -20,9 +20,14 @@
       url = "github:nix-community/nur";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    envf = {
+      url = "git+https://codeberg.org/ae7er/envf.git?ref=main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, niri, nur, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, niri, nur, envf, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "q";
@@ -40,7 +45,10 @@
       };
 
       modules = [
-        { nixpkgs.overlays = [ niri.overlays.niri ]; }
+        {
+          nixpkgs.overlays = [ niri.overlays.niri ];
+          environment.systemPackages = [ envf.packages.${system}.default ];
+        }
         ./hosts/${hostname}/configuration.nix
       ];
     };
