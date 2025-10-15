@@ -14,6 +14,7 @@
     cbonsai
     cmatrix
     lutgen
+    pipes-rs
     wget
 
     # Console utilities -> Dependencies for other apps
