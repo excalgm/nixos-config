@@ -1,17 +1,9 @@
-{ pkgs, ... }: {
+{
   programs = {
     btop.enable = true;
     bat.enable = true;
     lsd.enable = true;
     obs-studio.enable = true;
-
-    vim = {
-      enable = true;
-      packageConfigurable = pkgs.vim;
-      settings.expandtab = true;
-      settings.shiftwidth = 2;
-      settings.tabstop = 8;
-    };
 
     fuzzel = {
       enable = true;
