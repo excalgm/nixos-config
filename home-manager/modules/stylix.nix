@@ -53,6 +53,7 @@
         profileNames = [ "default" ];
       };
       hyprlock.enable = false;
+      kde.enable = false;
       vscode.enable = true;
       waybar.enable = false;
     };
