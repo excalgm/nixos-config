@@ -20,9 +20,11 @@
       url = "github:nix-community/nur";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nvf.url = "github:notashelf/nvf/v0.8";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, niri, nur, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, niri, nur, nvf, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "q";
@@ -60,6 +62,7 @@
 
         modules = [
           nur.modules.homeManager.default
+          nvf.homeManagerModules.default
           niri.homeModules.niri
           niri.homeModules.stylix
           ./home-manager/home.nix
