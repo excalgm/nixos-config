@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       appBadge = false;
-      arRPC = false;
+      arRPC = true;
       checkUpdates = false;
       customTitleBar = true;
       minimizeToTray = true;
