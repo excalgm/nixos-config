@@ -43,6 +43,7 @@
 
       modules = [
         { nixpkgs.overlays = [ niri.overlays.niri ]; }
+        stylix.nixosModules.stylix
         ./hosts/${hostname}/configuration.nix
       ];
     };
@@ -63,6 +64,7 @@
         modules = [
           nur.modules.homeManager.default
           nvf.homeManagerModules.default
+          stylix.homeModules.stylix
           niri.homeModules.niri
           niri.homeModules.stylix
           ./home-manager/home.nix

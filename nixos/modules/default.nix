@@ -12,6 +12,7 @@
     ./nix.nix
     ./powermgmt.nix
     ./security.nix
+    ./stylix.nix
     ./tailscale.nix
     ./timezone.nix
     ./udisks.nix

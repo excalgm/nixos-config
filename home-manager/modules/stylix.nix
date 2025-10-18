@@ -1,5 +1,5 @@
 { pkgs, inputs, config, ... }: {
-  imports = [ inputs.stylix.homeModules.stylix ];
+  #imports = [ inputs.stylix.homeModules.stylix ];
 
   home.packages = with pkgs; [
     noto-fonts-color-emoji
@@ -54,6 +54,7 @@
       };
       hyprlock.enable = false;
       kde.enable = false;
+      qt.enable = true;
       vscode.enable = true;
       waybar.enable = false;
     };
