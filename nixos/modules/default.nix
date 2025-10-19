@@ -2,22 +2,17 @@
   imports = [
     ./amnezia-vpn.nix
     ./appimage.nix
-    ./audio.nix
     ./boot.nix
-    ./bluetooth.nix
     ./gnupg.nix
-    ./network.nix
-    ./nh.nix
+    ./hardware
     ./niri.nix
     ./nix.nix
     ./nvim
-    ./powermgmt.nix
     ./security.nix
     ./stylix.nix
     ./tailscale.nix
     ./timezone.nix
     ./udisks.nix
     ./users.nix
-    ./virtualisation.nix
   ];
 }

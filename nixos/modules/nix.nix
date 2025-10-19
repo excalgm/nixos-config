@@ -1,4 +1,9 @@
 {
+  programs.nh = {
+    enable = true;
+    flake = builtins.toString ../../.; #"/home/${user}/nixos-config";
+  };
+
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.gc = {
