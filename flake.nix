@@ -14,17 +14,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    niri.url = "github:sodiboo/niri-flake";
-
-    nur = {
-      url = "github:nix-community/nur";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    niri.url = "github:sodiboo/niri-flake";
 
     nvf.url = "github:notashelf/nvf/v0.8";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, niri, nur, nvf, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, zen-browser, niri, nvf, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "q";
@@ -62,11 +62,11 @@
         };
 
         modules = [
-          nur.modules.homeManager.default
           nvf.homeManagerModules.default
           stylix.homeModules.stylix
           niri.homeModules.niri
           niri.homeModules.stylix
+          zen-browser.homeModules.twilight
           ./home-manager/home.nix
         ];
       };

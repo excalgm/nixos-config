@@ -49,7 +49,7 @@
     };
 
     targets = {
-      firefox = {
+      zen-browser = {
         profileNames = [ "default" ];
       };
       hyprlock.enable = false;
