@@ -15,7 +15,6 @@
       lib.mkMerge [ zshBeforeCompInit zshLastToRun ];
 
     shellAliases = {
-      hms = "nh home switch";
       sw = "nh os switch";
       upd = "nh os switch --update";
 
