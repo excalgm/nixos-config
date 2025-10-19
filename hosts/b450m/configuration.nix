@@ -1,4 +1,4 @@
-{ pkgs, stateVersion, hostname, ... }:
+{ stateVersion, hostname, ... }:
 
 {
   imports = [
@@ -7,7 +7,7 @@
     ../../nixos/modules
   ];
 
-  environment.systemPackages = [ pkgs.home-manager ];
+  #  environment.systemPackages = [ pkgs.home-manager ];
 
   networking.hostName = hostname;
 
