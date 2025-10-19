@@ -37,7 +37,7 @@
           accel-profile = "flat";
         };
 
-        focus-follows-mouse.enable = true;
+        focus-follows-mouse.enable = false;
         warp-mouse-to-focus.enable = true;
       };
 
