@@ -10,6 +10,7 @@
     ./nh.nix
     ./niri.nix
     ./nix.nix
+    ./nvim
     ./powermgmt.nix
     ./security.nix
     ./stylix.nix

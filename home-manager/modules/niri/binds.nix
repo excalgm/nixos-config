@@ -179,8 +179,9 @@ in {
 
     "Mod+W".action = toggle-column-tabbed-display;
 
-    "Print".action = screenshot;
-    "Mod+Print".action = screenshot-window;
+    "Print".action.screenshot = [];
+    "Mod+Print".action.screenshot-window = [];
+    "Ctrl+Print".action.screenshot-screen = [];
 
     "Mod+Escape" = {
       allow-inhibiting = false;

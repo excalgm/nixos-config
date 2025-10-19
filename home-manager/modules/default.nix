@@ -5,7 +5,6 @@
     ./gnupg.nix
     ./hypr
     ./niri
-    ./nvim
     ./shell
     ./stylix.nix
     ./waybar

@@ -24,7 +24,7 @@
     nvf.url = "github:notashelf/nvf/v0.8";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, zen-browser, niri, nvf, ... }@inputs: let
+  outputs = { nixpkgs, home-manager, stylix, niri, nvf, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "q";
@@ -42,9 +42,21 @@
       };
 
       modules = [
-        { nixpkgs.overlays = [ niri.overlays.niri ]; }
-        stylix.nixosModules.stylix
         ./hosts/${hostname}/configuration.nix
+
+        #{ nixpkgs.overlays = [ niri.overlays.niri ]; }
+        home-manager.nixosModules.home-manager
+        niri.nixosModules.niri
+        stylix.nixosModules.stylix
+        nvf.nixosModules.default
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.${user} = ./home-manager/home.nix;
+          home-manager.extraSpecialArgs = {
+            inherit inputs homeStateVersion user;
+          };
+        }
       ];
     };
     in {
@@ -54,21 +66,5 @@
           inherit (host) hostname stateVersion;
         };
       }) {} hosts;
-      
-      homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = {
-          inherit inputs homeStateVersion user;
-        };
-
-        modules = [
-          nvf.homeManagerModules.default
-          stylix.homeModules.stylix
-          niri.homeModules.niri
-          niri.homeModules.stylix
-          zen-browser.homeModules.twilight
-          ./home-manager/home.nix
-        ];
-      };
     };
 }
