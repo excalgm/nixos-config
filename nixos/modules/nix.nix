@@ -1,7 +1,7 @@
-{
+{ user, ... }: {
   programs.nh = {
     enable = true;
-    flake = builtins.toString ../../.; #"/home/${user}/nixos-config";
+    flake = "/home/${user}/nixos-config";
   };
 
   nixpkgs.config.allowUnfree = true;
