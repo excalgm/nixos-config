@@ -1,7 +1,7 @@
 {
   programs.git = {
     enable = true;
-    extraConfig = {
+    settings = {
       user.name = "Excal";
       user.email = "excalgames@duck.com";
       init.defaultBranch = "main";
