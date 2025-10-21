@@ -14,5 +14,6 @@
     ./timezone.nix
     ./udisks.nix
     ./users.nix
+    ./zram.nix
   ];
 }
