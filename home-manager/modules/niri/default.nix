@@ -7,6 +7,7 @@
     settings = {
       prefer-no-csd = true;
       spawn-at-startup = [
+        { argv = ["systemctl" "--user" "restart" "xdg-desktop-portal-gnome.service"]; }
         { argv = ["udiskie" "--tray"]; }
         { argv = ["mako"]; }
         { argv = ["waybar"]; }
