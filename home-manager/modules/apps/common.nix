@@ -9,7 +9,6 @@
       enable = true;
       settings = {
         main = {
-          icon-theme = "MoreWaita";
           placeholder = "Enter something...";
           prompt = "🔍 ";
           terminal = "kitty --hold";

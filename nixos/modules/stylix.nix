@@ -35,13 +35,6 @@
       package = pkgs.bibata-cursors;
     };
 
-    icons = {
-      enable = true;
-      package = pkgs.morewaita-icon-theme;
-      dark = "MoreWaita";
-      light = "MoreWaita";
-    };
-
     homeManagerIntegration = {
       autoImport = true;
       followSystem = true;
