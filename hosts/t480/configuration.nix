@@ -5,6 +5,8 @@
     ./hardware-configuration.nix
     ./local-packages.nix
     ../../nixos/modules
+
+    ./tailscale.nix
   ];
 
   #  environment.systemPackages = [ pkgs.home-manager ];

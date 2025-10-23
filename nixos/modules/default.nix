@@ -10,7 +10,6 @@
     ./nvim
     ./security.nix
     ./stylix.nix
-    ./tailscale.nix
     ./timezone.nix
     ./udisks.nix
     ./users.nix
