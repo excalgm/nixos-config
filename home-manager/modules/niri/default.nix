@@ -41,13 +41,6 @@
         warp-mouse-to-focus.enable = true;
       };
 
-      outputs = {
-        "eDP-1" = {
-          mode = { width=1920; height=1080; refresh=60.0; }; 
-          scale = 1.10;
-        };
-      };
-
       clipboard = {
         disable-primary = true;
       };
