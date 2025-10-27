@@ -1,6 +1,5 @@
 {
   imports = [
-    ./amnezia-vpn.nix
     ./appimage.nix
     ./boot.nix
     ./gnupg.nix

@@ -44,7 +44,6 @@
       modules = [
         ./hosts/${hostname}/configuration.nix
 
-        #{ nixpkgs.overlays = [ niri.overlays.niri ]; }
         home-manager.nixosModules.home-manager
         niri.nixosModules.niri
         stylix.nixosModules.stylix
