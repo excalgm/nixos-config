@@ -6,9 +6,6 @@
     initContent = let
       p10kfile = ./.p10k.zsh;
       zshBeforeCompInit = lib.mkOrder 550 ''
-        if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
-          source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
-        fi
         setopt notify interactive_comments
         unsetopt autocd beep extendedglob nomatch
         set -o vi
