@@ -4,6 +4,7 @@
     filen-desktop
     keepassxc
     localsend
+    nautilus
     telegram-desktop
     vlc
     yandex-music
@@ -18,8 +19,9 @@
     cava
     cbonsai
     cmatrix
-    lutgen
+    hyprshot
     pipes-rs
+    wf-recorder
     wget
 
     # Console utilities -> Dependencies for other apps

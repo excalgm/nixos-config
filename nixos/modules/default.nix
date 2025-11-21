@@ -4,11 +4,10 @@
     ./boot.nix
     ./gnupg.nix
     ./hardware
-    ./niri.nix
+    ./hyprland.nix
     ./nix.nix
     ./nvim
     ./security.nix
-    ./stylix.nix
     ./throne.nix
     ./timezone.nix
     ./udisks.nix

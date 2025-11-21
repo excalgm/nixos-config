@@ -1,9 +1,16 @@
-{
+{ config, ... }: {
   programs = {
-    btop.enable = true;
     bat.enable = true;
     lsd.enable = true;
-    obs-studio.enable = true;
+
+    btop = {
+      enable = true;
+      themes.matugen = builtins.readFile "${config.programs.matugen.theme.files}/.config/btop/themes/matugen.theme";
+      settings = {
+        color_theme = "matugen";
+        theme_background = false;
+      };
+    };
 
     fuzzel = {
       enable = true;
@@ -17,14 +24,17 @@
           inner-pad = 5;
           width = 50;
           horizontal-pad = 20;
+          include = "${config.programs.matugen.theme.files}/.config/fuzzel/colors.ini";
         };
+        border.width = 2;
+        border.radius = 8;
       };
     };
 
     iamb = {
       enable = true;
       settings = {
-        profiles.user.user_id = "@stanislav:excal.cc";
+        profiles.user.user_id = "@excalgm:mozilla.org";
         notifications.enabled = true;
         image_preview = {
           protocol.type = "kitty"; 
@@ -37,21 +47,8 @@
     };
   };
 
-  services.mako = {
+  services.dunst = {
     enable = true;
-    settings = {
-      on-button-middle = "dismiss-all";
-      default-timeout = 2500;
-      max-icon-size = 48;
-      "mode=do-not-disturb".invisible = true;
-      "app-name=wp-vol" = {
-        layer = "overlay";
-        history = false;
-        anchor = "top-center";
-        group-by = "app-name";
-        format = "<b>%s</b>\\n%b";
-      };
-      "app-name=wp-vol group-index=0".invisible = false;
-    };
+    configFile = "${config.programs.matugen.theme.files}/.config/dunst/dunstrc";
   };
 }

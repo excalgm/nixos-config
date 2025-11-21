@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   programs.vesktop = {
     enable = true;
     settings = {
@@ -12,5 +12,6 @@
       hardwareAcceleration = true;
       discordBranch = "stable";
     };
+    vencord.themes.matugen = builtins.readFile "${config.programs.matugen.theme.files}/.config/vesktop/themes/midnight-discord.css";
   };
 }

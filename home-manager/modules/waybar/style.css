@@ -1,75 +1,104 @@
-/* vim: set filetype=less : */
-@define-color bg0 #282828;
-@define-color bg1 #3c3836;
-@define-color bg2 #504945;
-@define-color bg3 #665c54;
-@define-color bg4 #7c6f64;
-@define-color fg0 #fbf1c7;
-@define-color fg1 #ebdbb2;
-@define-color fg2 #d5c4a1;
-@define-color fg3 #bdae93;
-@define-color fg4 #a89984;
-
 * {
-  padding: 0px;
-  margin: 0px;
-  font-family: JetBrainsMono Nerd Font;
+  padding: 0;
+  margin: 0;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-weight: bold;
   font-size: 14px;
 }
-#battery,
-#backlight,
+
+window#waybar {
+  border-bottom: 0px solid #ffffff;
+  background: @surface;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* ------ Modules Left ------ */
+.modules-left {
+  padding-left: 6px;
+}
+
 #clock,
 #cpu,
-#disk,
+#custom-icon,
 #idle_inhibitor,
-#language,
-#memory,
-#network,
-#systray,
-#wireplumber,
-#workspaces {
-  color: @fg1;
-  margin: 4px 4px;
-  padding: 0px 8px 0px 8px;
-  border-radius: 8px;
-  background-color: @bg2;
+#memory {
+  padding: 2px 8px;
+  margin: 6px 2px;
+  border-radius: 12px;
+  background: @surface_container_high;
+  color: @secondary;
+}
+
+#custom-icon {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: @primary;
+  color: @on_primary;
+}
+
+#clock {
+  font-weight: bold;
+  font-size: 13px;
 }
 
 #idle_inhibitor {
-  padding-right: 13px;
+  padding: 4px 8px;
+  font-size: 15px;
+}
+
+/* ------ Modules Right/Center ------ */
+.modules-center,
+.modules-right {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#backlight,
+#battery,
+#language,
+#network,
+#systray,
+#wireplumber {
+  background: @surface_container_high;
+  color: @secondary;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin: 6px 2px;
+}
+
+#custom-tray_arrow {
+  font-size: 15px;
 }
 
 #tray {
   padding-left: 10px;
 }
 
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
 #workspaces {
-  padding: 0px 2px 0px 2px;
+  margin: 0px 1px;
+  padding: 0px 1px;
 }
 
 #workspaces button {
-  margin: 4px;
-  padding: 0px 1px 0px 1px;
-  border-radius: 6px;
-}
-
-#workspaces button.empty {
-  color: @fg4;
+  padding: 2px 6px;
+  margin: 6px 2px;
+  border-radius: 12px;
+  background: @surface_container_high;
+  color: @outline;
 }
 
 #workspaces button.active {
-  background-color: @bg4;
-  color: @fg1;
+  background: @primary;
+  color: @on_primary;
 }
 
-#window {
-  padding-left: 4px;
-}
-
-window#waybar {
-  background-color: alpha(@bg0, 0.99);
-  border: 0px solid @bg0;
-  border-radius: 0px;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+tooltip {
+  background: @surface;
+  border: 1px solid @on_surface;
 }

@@ -1,8 +1,5 @@
 { user, ... }: {
-  home-manager.users.${user}.programs.niri.settings.outputs = {
-    "eDP-1" = {
-      mode = { width=1920; height=1080; refresh=60.0; };
-      scale = 1.10;
-    };
-  };
+  home-manager.users.${user}.wayland.windowManager.hyprland.settings.monitor = [
+    "eDP-1,preferred,auto,1.20"
+  ];
 }

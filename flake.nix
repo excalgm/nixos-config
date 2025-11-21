@@ -9,22 +9,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    niri.url = "github:sodiboo/niri-flake";
+    matugen.url = "github:iniox/matugen";
 
     nvf.url = "github:notashelf/nvf/v0.8";
   };
 
-  outputs = { nixpkgs, home-manager, stylix, niri, nvf, ... }@inputs: let
+  outputs = { nixpkgs, home-manager, nvf, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "q";
@@ -45,8 +40,6 @@
         ./hosts/${hostname}/configuration.nix
 
         home-manager.nixosModules.home-manager
-        niri.nixosModules.niri
-        stylix.nixosModules.stylix
         nvf.nixosModules.default
         {
           home-manager.useGlobalPkgs = true;

@@ -1,12 +1,13 @@
 {
   imports = [
     ./apps
+    ./fonts.nix
     ./git.nix
     ./gnupg.nix
-    ./hypr
-    ./niri
+    ./gtk.nix
+    ./hyprland
+    ./matugen
     ./shell
-    ./stylix.nix
     ./waybar
     ./wpaperd.nix
   ];
