@@ -9,6 +9,7 @@
     ./nvim
     ./security.nix
     ./stylix.nix
+    ./throne.nix
     ./timezone.nix
     ./udisks.nix
     ./users.nix
