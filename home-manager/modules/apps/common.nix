@@ -16,6 +16,7 @@
       enable = true;
       settings = {
         main = {
+          launch-prefix = "uwsm-app --";
           placeholder = "Enter something...";
           prompt = "🔍 ";
           terminal = "kitty --hold";
