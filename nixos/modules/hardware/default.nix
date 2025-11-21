@@ -6,6 +6,5 @@
     ./bluetooth.nix
     ./network.nix
     ./powermgmt.nix
-    ./virtualisation.nix
   ];
 }
