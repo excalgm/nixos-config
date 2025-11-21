@@ -6,7 +6,7 @@
     
     lsp = {
       enable = true;
-      servers = "nixd";
+      servers = ["nixd"];
     };
   };
 }
