@@ -15,11 +15,9 @@
     };
 
     matugen.url = "github:iniox/matugen";
-
-    nvf.url = "github:notashelf/nvf/v0.8";
   };
 
-  outputs = { nixpkgs, home-manager, nvf, ... }@inputs: let
+  outputs = { nixpkgs, home-manager, ... }@inputs: let
     system = "x86_64-linux";
     homeStateVersion = "25.05";
     user = "q";
@@ -40,7 +38,6 @@
         ./hosts/${hostname}/configuration.nix
 
         home-manager.nixosModules.home-manager
-        nvf.nixosModules.default
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
