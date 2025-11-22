@@ -6,5 +6,6 @@
     ./bluetooth.nix
     ./network.nix
     ./powermgmt.nix
+    ./zram.nix
   ];
 }
