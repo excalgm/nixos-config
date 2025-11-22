@@ -2,6 +2,7 @@
   imports = [
     ./appimage.nix
     ./boot.nix
+    ./fonts.nix
     ./gnupg.nix
     ./hardware
     ./hyprland.nix
