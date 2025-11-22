@@ -1,4 +1,4 @@
-{ inputs, ... }: let
+{ config, inputs, ... }: let
   templates = ./templates;
   wallpaper = ../../../assets/wallpaper.png;
 in {
@@ -14,17 +14,49 @@ in {
     inherit wallpaper;
 
     templates = {
-      waybar = {
-        input_path = "${templates}/colors.css";
-        output_path = "~/.config/waybar/colors.css";
+      btop = {
+        input_path = "${templates}/btop.theme";
+        output_path = "~/.config/btop/themes/matugen.theme";
+      };
+      dunst = {
+        input_path = "${templates}/dunst";
+        output_path = "~/.config/dunst/dunstrc";
+      };
+      fuzzel = {
+        input_path = "${templates}/fuzzel.ini";
+        output_path = "~/.config/fuzzel/colors.ini";
+      };
+      gtk = {
+        input_path = "${templates}/gtk.css";
+        output_path = "~/.config/gtk-3.0/gtk.css";
+      };
+      hyprland = {
+        input_path = "${templates}/hyprland.conf";
+        output_path = "~/.config/hypr/colors.conf";
       };
       kitty = {
         input_path = "${templates}/kitty.conf";
         output_path = "~/.config/kitty/colors.conf";
       };
-      fuzzel = {
-        input_path = "${templates}/fuzzel.ini";
-        output_path = "~/.config/fuzzel/colors.ini";
+      qtct = {
+        input_path = "${templates}/qtct.conf";
+        output_path = "~/.config/qt5ct/colors/matugen.conf";
+      };
+      telegram = {
+        input_path = "${templates}/telegram.tdesktop-theme";
+        output_path = "~/.cache/matugen.tdesktop-theme";
+      };
+      vesktop = {
+        input_path = "${templates}/discord.css";
+        output_path = "~/.config/vesktop/themes/midnight-discord.css";
+      };
+      vscode = {
+        input_path = "${templates}/hyprlunavsc.json";
+        output_path = "~/.vscode/hyprluna.json";
+      };
+      waybar = {
+        input_path = "${templates}/colors.css";
+        output_path = "~/.config/waybar/colors.css";
       };
       zenUserChrome = {
         input_path = "${templates}/userChrome.css.tpl";
@@ -34,36 +66,9 @@ in {
         input_path = "${templates}/userContent.css.tpl";
         output_path = "~/.config/zen/userContent.css";
       };
-      hyprland = {
-        input_path = "${templates}/hyprland.conf";
-        output_path = "~/.config/hypr/colors.conf";
-      };
-      vscode = {
-        input_path = "${templates}/hyprlunavsc.json";
-        output_path = "~/.vscode/hyprluna.json";
-      };
-      qtct = {
-        input_path = "${templates}/qtct.conf";
-        output_path = "~/.config/qt5ct/colors/matugen.conf";
-      };
-      dunst = {
-        input_path = "${templates}/dunst";
-        output_path = "~/.config/dunst/dunstrc";
-      };
-      gtk = {
-        input_path = "${templates}/gtk.css";
-        output_path = "~/.config/gtk-3.0/gtk.css";
-      };
-      vesktop = {
-        input_path = "${templates}/discord.css";
-        output_path = "~/.config/vesktop/themes/midnight-discord.css";
-      };
-      btop = {
-        input_path = "${templates}/btop.theme";
-        output_path = "~/.config/btop/themes/matugen.theme";
-      };
     };
   };
 
+  home.file.".cache/matugen.tdesktop-theme".source = "${config.programs.matugen.theme.files}/.cache/matugen.tdesktop-theme";
   services.wpaperd.settings.any.path = wallpaper;
 }
