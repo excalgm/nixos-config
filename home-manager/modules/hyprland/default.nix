@@ -20,6 +20,12 @@
         "${config.programs.matugen.theme.files}/.config/hypr/colors.conf"
       ];
 
+      env = [
+        "NIXOS_OZONE_WL,1"
+        "QT_QPA_PLATFORM,wayland"
+        "GDK_BACKEND,wayland"
+      ];
+
       "$mainMod" = "SUPER";
       "$terminal" = "uwsm-app -- kitty";
       "$fileManager" = "uwsm-app -- nautilus --new-window";
