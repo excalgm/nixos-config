@@ -35,6 +35,7 @@ in {
 
       "$mainMod, D, exec, $menu"
       "$mainMod, E, exec, $fileManager"
+      "$mainMod, Period, exec, uwsm-app -- bemoji -n"
       "$mainMod, F1, exec, uwsm-app -- ${powermenu}/bin/powermenu"
       "$mainMod, B, exec, uwsm-app -- cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"
       "$mainMod SHIFT, B, exec, uwsm-app -- cliphist list | fuzzel --dmenu | cliphist delete"
