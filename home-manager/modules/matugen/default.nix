@@ -26,9 +26,13 @@ in {
         input_path = "${templates}/fuzzel.ini";
         output_path = "~/.config/fuzzel/colors.ini";
       };
-      pywalfox = {
-        input_path = "${templates}/pywalfox.json";
-        output_path = "~/.cache/wal/colors.json";
+      zenUserChrome = {
+        input_path = "${templates}/userChrome.css.tpl";
+        output_path = "~/.config/zen/userChrome.css";
+      };
+      zenUserContent = {
+        input_path = "${templates}/userContent.css.tpl";
+        output_path = "~/.config/zen/userContent.css";
       };
       hyprland = {
         input_path = "${templates}/hyprland.conf";
