@@ -6,6 +6,7 @@
     ./gnupg.nix
     ./hardware
     ./hyprland.nix
+    ./matugen-vscode.nix
     ./nix.nix
     ./security.nix
     ./throne.nix

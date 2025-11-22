@@ -38,6 +38,10 @@ in {
         input_path = "${templates}/hyprland.conf";
         output_path = "~/.config/hypr/colors.conf";
       };
+      vscode = {
+        input_path = "${templates}/hyprlunavsc.json";
+        output_path = "~/.vscode/hyprluna.json";
+      };
       qtct = {
         input_path = "${templates}/qtct.conf";
         output_path = "~/.config/qt5ct/colors/matugen.conf";

@@ -1,6 +1,7 @@
-{ pkgs, ... }: {
+{ config, pkgs, ... }: {
   programs.vscode = {
     enable = true;
+    package = pkgs.vscode;
     profiles.default = {
       extensions = with pkgs.vscode-extensions; [
         bbenoist.nix
@@ -9,16 +10,17 @@
         ms-python.python
         ms-python.vscode-pylance
         oops418.nix-env-picker
+        pkief.material-icon-theme
         pkief.material-product-icons
         usernamehw.errorlens
-        vscode-icons-team.vscode-icons
         vscodevim.vim
         wakatime.vscode-wakatime
         ];
       userSettings = {
         "editor.tabSize" = 2;
+        "workbench.colorTheme" = "HyprLuna Material";
         "workbench.productIconTheme" = "material-product-icons";
-        "workbench.iconTheme" = "vscode-icons";
+        "workbench.iconTheme" = "material-icon-theme";
         "extensions.autoCheckUpdates" = false;
         "extensions.autoUpdate" = false;
         "vsicons.dontShowNewVersionMessage" = true;
@@ -26,5 +28,9 @@
         "git.confirmSync" = false;
       };
     };
+  };
+  home.file.".vscode/extensions/hyprluna.hyprluna-theme-1.0.2/themes/hyprluna.json" = {
+    source = "${config.programs.matugen.theme.files}/.vscode/hyprluna.json";
+    force = true;
   };
 }

@@ -9,7 +9,7 @@ My awesome NixOS configuration inspired by [Ampersand's flake](https://github.co
 - 🎨 **Theme**: Wallpaper-adaptive Material Design 3 with [Matugen](https://github.com/iniox/matugen).
 - 🏠 **Home Manager**: lots of configured stuff which is same on different hosts.
 - 👣 **Desktop**: [Hyprland](https://github.com/hyprwm/hyprland) - a dynamic tiling Wayland compositor that doesn't sacrifice on its looks. 
-- ✍️ **Code editor**: ~~Themed VSCode with Vim emulation~~ ???.
+- ✍️ **Code editor**: Material-themed VSCode with Vim emulation.
 - 🛠️ **Shell**: zsh with powerlevel10k and bare minimum of plugins.
 
 ## ⚙️ Installation
@@ -65,6 +65,7 @@ Then reboot and you are good to go!
 
 ## 👍 Tips and tricks
 1. After installing this configuration you can easily rebuild system and Home Manager with aliases declared in `home-manager/modules/shell.nix`.
+2. If VSCode Material theme didn't install after flake installation, run `code --install-extension HyprLuna.hyprluna-theme` in terminal.
 
 ## 🤝 Credits
 - **BIG THANKS** ❤️ to [**Ampersand**](https://github.com/Andrey0189). Because I am new in NixOS, I mostly inspired by his configuration and video-guide ([Russian](https://youtu.be/watch?v=HOq7XTygAAU) and [English](https://youtu.be/watch?v=nLwbNhSxLd4)).
