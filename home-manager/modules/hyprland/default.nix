@@ -63,6 +63,7 @@
       ];
 
       animations.enabled = false;
+      debug.disable_scale_checks = true;
       dwindle = {
         pseudotile = true;
         preserve_split = true;
