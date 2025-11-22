@@ -44,7 +44,7 @@ in {
       };
       gtk = {
         input_path = "${templates}/gtk.css";
-        output_path = "~/.config/gtk-3.0/colors.css";
+        output_path = "~/.config/gtk-3.0/gtk.css";
       };
       vesktop = {
         input_path = "${templates}/discord.css";
