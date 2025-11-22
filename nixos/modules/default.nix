@@ -7,7 +7,6 @@
     ./hardware
     ./hyprland.nix
     ./nix.nix
-    ./nvim
     ./security.nix
     ./throne.nix
     ./timezone.nix
