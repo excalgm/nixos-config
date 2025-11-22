@@ -32,9 +32,12 @@ in {
       "$mainMod, J, togglesplit," #dwindle
 
       "$mainMod, Return, exec, $terminal"
+
       "$mainMod, D, exec, $menu"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, F1, exec, uwsm-app -- ${powermenu}/bin/powermenu"
+      "$mainMod, B, exec, uwsm-app -- cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"
+      "$mainMod SHIFT, B, exec, uwsm-app -- cliphist list | fuzzel --dmenu | cliphist delete"
 
       ", Print, exec, uwsm-app -- hyprshot -z -m region --clipboard-only"
       "SHIFT, Print, exec, uwsm-app -- hyprshot -z -m output -m active --clipboard-only"

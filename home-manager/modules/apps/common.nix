@@ -48,8 +48,22 @@
     };
   };
 
-  services.dunst = {
-    enable = true;
-    configFile = "${config.programs.matugen.theme.files}/.config/dunst/dunstrc";
+  services = {
+    dunst = {
+      enable = true;
+      configFile = "${config.programs.matugen.theme.files}/.config/dunst/dunstrc";
+    };
+    
+    udiskie = {
+      enable = true;
+      automount = true;
+      notify = true;
+      tray = "always";
+    };
+
+    cliphist = {
+      enable = true;
+      extraOptions = [ "-max-items" "30" ];
+    };
   };
 }
