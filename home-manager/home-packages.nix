@@ -5,6 +5,7 @@
     keepassxc
     localsend
     nautilus
+    swayimg
     telegram-desktop
     vlc
     yandex-music
